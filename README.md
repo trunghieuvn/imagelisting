@@ -6,7 +6,10 @@
   - MVVM
   - Clean architecture
   - Swift UI Programatically: SnapKit
-
+# How to Run
+    - Setup: Xcode 14.1
+    - Run setup pod with command: `pod install`
+    - Open file `ImageListing.xcworkspace` use Xcode and run in Xcode
 
 # Structure
 
