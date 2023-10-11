@@ -31,21 +31,29 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ic5-d3-AoZ">
                                 <rect key="frame" x="16" y="344" width="398" height="35"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="SignIn"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Sign In"/>
                                 <connections>
                                     <action selector="onTapSignIn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8RH-4p-Tq7"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aAK-Cw-ax1">
+                                <rect key="frame" x="20" y="401" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="aAK-Cw-ax1" firstAttribute="top" secondItem="Ic5-d3-AoZ" secondAttribute="bottom" constant="22" id="7cc-vT-5au"/>
                             <constraint firstItem="LEB-Iz-IAe" firstAttribute="top" secondItem="QUo-kb-i0d" secondAttribute="bottom" constant="22" id="A2k-qz-uYO"/>
                             <constraint firstItem="Ic5-d3-AoZ" firstAttribute="top" secondItem="LEB-Iz-IAe" secondAttribute="bottom" constant="22" id="Frf-Cc-2JM"/>
                             <constraint firstItem="Ic5-d3-AoZ" firstAttribute="top" secondItem="LEB-Iz-IAe" secondAttribute="bottom" constant="22" id="I8f-rB-wJ4"/>
                             <constraint firstItem="Ic5-d3-AoZ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="KAa-BN-wwS"/>
                             <constraint firstItem="Ic5-d3-AoZ" firstAttribute="top" secondItem="LEB-Iz-IAe" secondAttribute="bottom" constant="22" id="Ngt-6b-IYH"/>
                             <constraint firstItem="QUo-kb-i0d" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="U68-pJ-ED2"/>
+                            <constraint firstItem="aAK-Cw-ax1" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="gFy-Hm-6tF"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Ic5-d3-AoZ" secondAttribute="trailing" constant="16" id="gr3-wg-fJv"/>
                             <constraint firstItem="LEB-Iz-IAe" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="lfh-yR-bbk"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="LEB-Iz-IAe" secondAttribute="trailing" constant="16" id="nZf-Jg-5zf"/>
@@ -54,6 +62,12 @@
                             <constraint firstItem="QUo-kb-i0d" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="173" id="xxV-Gs-EV0"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="btnSignIn" destination="Ic5-d3-AoZ" id="e6E-JX-Cac"/>
+                        <outlet property="lblErrorMessage" destination="aAK-Cw-ax1" id="7ng-KZ-zy2"/>
+                        <outlet property="tfEmail" destination="QUo-kb-i0d" id="Xv8-cM-mVV"/>
+                        <outlet property="tfPassword" destination="LEB-Iz-IAe" id="gVm-4m-faX"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
