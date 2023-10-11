@@ -19,7 +19,8 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         
         guard let _ = (scene as? UIWindowScene) else { return }
         let navigationController = window?.rootViewController as? UINavigationController
-        let inputEmailVC = navigationController?.topViewController as? SignInViewController
+//        let navigationController = window?.rootViewController as? UINavigationController
+//        let viewController = navigationController?.topViewController as? SignInViewController
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {

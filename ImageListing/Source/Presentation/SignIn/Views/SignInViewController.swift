@@ -32,15 +32,15 @@ class SignInViewController: UIViewController {
         // set delegate
         tfEmail.delegate = self
         tfPassword.delegate = self
-        
+        lblErrorMessage.text = ""
         //init viewmodel
         viewModel = SignInViewModel()
         
         //  subscribe result of variable isValid in ViewModel then handle button login is enable or not?
         _ = viewModel.isValid.subscribe({ [weak self] isValid in
             guard let strongSelf = self, let isValid = isValid.element else { return }
-            strongSelf.btnSignIn.isEnabled = isValid
-            strongSelf.btnSignIn.backgroundColor = isValid ? UIColor.red : UIColor.gray
+            //strongSelf.btnSignIn.isEnabled = isValid
+            //strongSelf.btnSignIn.backgroundColor = isValid ? UIColor.blue : UIColor.gray
         })
     }
 
