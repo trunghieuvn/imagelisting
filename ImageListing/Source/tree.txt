@@ -1,0 +1,39 @@
+.
+├── AppDelegate.swift
+├── Data
+│   ├── Data
+│   │   └── Remote
+│   │       └── GiphyApi.swift
+│   └── Repository
+│       └── ImageListingRepository.Impl.swift
+├── Domain
+│   ├── Entities
+│   ├── Repository
+│   │   └── ImageListingRepository.swift
+│   └── Usecase
+│       ├── ImageListingUsecase.swift
+│       └── Impl
+│           └── ImageListingUsecase.Impl.swift
+├── Presentation
+│   ├── Favorite
+│   │   ├── ViewModel
+│   │   │   └── FavoriteViewModel.swift
+│   │   └── Views
+│   │       └── FavoriteViewController.swift
+│   ├── Home
+│   ├── ImageListing
+│   │   ├── ViewModel
+│   │   └── Views
+│   │       └── ImageListingViewController.swift
+│   └── SignIn
+│       ├── Storybook
+│       │   └── Base.lproj
+│       │       └── Main.storyboard
+│       ├── ViewModel
+│       │   └── SignInViewModel.swift
+│       └── Views
+│           └── SignInViewController.swift
+├── SceneDelegate.swift
+└── tree.txt
+
+23 directories, 14 files
