@@ -5,7 +5,7 @@
 # Technial Stack Detail
   - MVVM
   - Clean architecture
-  - Swift UI Programatically: SnapKit
+  - UIKIT with storyboard, Swift UI Programatically: SnapKit
 # How to Run
     - Setup: Xcode 14.1
     - Run setup pod with command: `pod install`
@@ -82,3 +82,6 @@ response example:
     ]
 }
 ```
+
+# Ref
+ - https://cocoapods.org/pods/RxSwift
